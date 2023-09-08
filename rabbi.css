@@ -1,0 +1,61 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: #DBEAFE;
+  padding: 0;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1E40AF;
+  font-size: 1.1rem;
+  border-bottom: 0.2px solid #A8A29E;
+}
+
+.header-image{
+  border-radius: 50%;
+}
+
+.today{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #065F46;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem;
+}
+
+.about-image{
+  border-radius: 0 15px 0 15px;
+}
+
+.about-me{
+  font-size: 1.5rem;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.footer:hover{
+  text-decoration: line-through;
+}
+
+@media(max-width: 750px){
+  .about{
+    flex-direction: column;
+  }
+}

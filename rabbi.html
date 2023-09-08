@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" type="text/css" href="rabbi.css">
+</head>
+<body>
+  <header class="header">
+    <img src="image/pics.jpg" alt="rabbi" width="50px" height="50px" class="header-image" data-testid="slackDisplayImage">
+    <h3 data-testid="slackUserName">Rabbi</h3>
+  </header>
+
+  <div class="today">
+    <span data-testid="currentDayOfTheWeek"></span>
+    <span data-testid="currentUTCTime"></span>
+  </div>
+
+  <div class="about">
+    <div class="about-me">
+      <p>
+        Hi, my name is Success Isaiah, and i'm happy to be part of this amazing program.
+      </p>
+      <p>
+        I enrolled in the <span data-testid="myTrack">Frontend</span> Track and i'm definitely going all the way to the end.
+      </p>
+      <p>
+        You can find this work on my GitHub page - 
+        <a href="https://github.com/rabbiincode/HNG--my-profile" target="_blank" data-testid="githubURL">Click Here</a>
+      </p>
+      <p>I really look forward to the opportunities this internship promises and holds for all.</p>
+    </div>
+    <img src="image/pics.jpg" alt="rabbi" width="500px" height="500px" class="about-image" data-testid="slackDisplayImage">
+  </div>
+
+  <footer class="footer">
+    &copy; success
+  </footer>
+  <script src="rabbi.js"></script>
+</body>
+</html>
+
+<!-- Task: Frontend Page Creation with Specific Elements
+Objective: Develop and host a web page using HTML, CSS and JS that showcases specific personal and real-time data attributes. Each required element should have a specified data-testid attribute for easy identification and testing.
+Requirements:
+Slack Name:
+Display your Slack name prominently.
+Attribute: data-testid="slackUserName"
+Slack Display Picture:
+Showcase your Slack profile picture.
+The image's alt attribute should be your Slack username.
+Attribute: data-testid="slackDisplayImage"
+Current Day of the Week:
+Indicate the current day of the week (e.g., Monday, Tuesday).
+Attribute: data-testid="currentDayOfTheWeek"
+Current UTC Time:
+Display the current UTC time.
+Attribute: data-testid="currentUTCTime"
+Track:
+Mention your track (e.g Frontend).
+Attribute: data-testid="myTrack"
+GitHub URL:
+Provide a clickable link to your GitHub repository where the source code for this task resides.
+Attirbute: data-testid=“githubURL” -->
