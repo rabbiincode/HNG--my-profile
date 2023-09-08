@@ -7,12 +7,11 @@ function getCurrentDayOfWeek() {
 }
 
 // Function to get the current UTC time
-function getCurrentUTCTime() {
-  const currentDate = new Date();
-  const utcTimeString = currentDate.toUTCString();
+function getCurrentUTCTimeInMilliseconds() {
+  const utcTimeString = new Date().getTime();
   return utcTimeString;
 }
 
 // Update the current day of the week and UTC time in the HTML
 document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = `Week Day: ${getCurrentDayOfWeek()}`;
-document.querySelector('[data-testid="currentUTCTime"]').textContent = `Time: ${getCurrentUTCTime()}`;
+document.querySelector('[data-testid="currentUTCTime"]').textContent = `UTC Time: ${getCurrentUTCTimeInMilliseconds()}ms`;
