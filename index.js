@@ -6,12 +6,22 @@ function getCurrentDayOfWeek() {
   return dayOfWeek;
 }
 
-// Function to get the current UTC time
-function getCurrentUTCTimeInMilliseconds() {
-  const utcTimeString = new Date().getTime();
-  return utcTimeString;
-}
-
 // Update the current day of the week and UTC time in the HTML
 document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = `Week Day: ${getCurrentDayOfWeek()}`;
-document.querySelector('[data-testid="currentUTCTime"]').textContent = `UTC Time: ${getCurrentUTCTimeInMilliseconds()}ms`;
+
+function getCurrentUTCTimeInMilliseconds() {
+  const utcTimeMilliseconds = new Date().getTime();
+  return utcTimeMilliseconds;
+}
+
+function displayCurrentUTCTime() {
+  const utcTimeElement = document.getElementById("utc-time");
+  const currentUTCTime = getCurrentUTCTimeInMilliseconds();
+  document.querySelector('[data-testid="currentUTCTime"]').textContent = `UTC Time: ${getCurrentUTCTimeInMilliseconds()}ms`;
+}
+
+// Update the time initially
+displayCurrentUTCTime();
+
+// Update the time every second (1000 milliseconds)
+setInterval(displayCurrentUTCTime, 1000);
